@@ -1,0 +1,57 @@
+html {
+    height:100%;
+}
+body {
+    background:    linear-gradient(#30a5a5, #a1ca81);
+    height:100%;
+    margin:0;
+}
+.profile-box {
+    margin:4rem auto;
+    font-family: sans-serif;
+    max-width:20rem;
+    /* border: 1px solid #000; */
+    box-shadow: 14px 14px 24px -1px rgba(3,3,3,0.19);
+    padding:2rem;
+    background: #fff url(../images/technology-1283624_1280.jpg) no-repeat center top;
+    background-size: contain;
+    overflow: hidden;
+    position: relative;
+}
+.profile-text-bg {
+    background: linear-gradient(#83a530, #d7e5cf);
+    width: 60rem;
+    height: 60rem;
+    margin: -5rem -20rem 0 -20rem;
+    border-radius: 100rem;
+    position: absolute;
+    z-index: 1;
+}
+.profile-text {
+    position: relative;
+    z-index: 2;
+}
+.profile-pic {
+    width:6rem;
+    height:6rem;
+    object-fit: cover;
+    border-radius: 100rem;
+    /* box-shadow: #000 5px 5px 5px; */
+    margin: 0 auto 2rem auto;
+    display:block;
+    position: relative;
+    z-index: 2;
+    border: 0.2rem solid #fff;
+}
+
+h1 {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    text-align: center;
+    color: #fff;
+}
+h1 span {
+    display: block;
+    font-size: 1rem;
+    margin-top:0.5em;
+}
