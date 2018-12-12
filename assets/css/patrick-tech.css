@@ -2,9 +2,13 @@ html {
     height:100%;
 }
 body {
-    background:    linear-gradient(#30a5a5, #a1ca81);
-    height:100%;
+    
+    /* height:100%; */
     margin:0;
+}
+.site-wrap {
+    background:    linear-gradient(#30a5a5, #a1ca81);
+    overflow: hidden;
 }
 .profile-box {
     margin:4rem auto;
@@ -55,3 +59,9 @@ h1 span {
     font-size: 1rem;
     margin-top:0.5em;
 }
+
+.skill-heading {}
+.skill-list {}
+.skill-item {}
+.skill-name {}
+.skill-progress {}
