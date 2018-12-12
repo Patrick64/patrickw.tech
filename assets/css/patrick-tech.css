@@ -1,3 +1,11 @@
+:root {
+    --color1: #30a5a5;
+    --color2: #a1ca81;
+    --color3: #83a530;
+    --color4: #d7e5cf;
+    --progress-color1: #fff;
+    --progress-color2: #000;
+}
 html {
     height:100%;
 }
@@ -7,7 +15,7 @@ body {
     margin:0;
 }
 .site-wrap {
-    background:    linear-gradient(#30a5a5, #a1ca81);
+    background:    linear-gradient(var(--color1), var(--color2) );
     overflow: hidden;
 }
 .profile-box {
@@ -23,7 +31,7 @@ body {
     position: relative;
 }
 .profile-text-bg {
-    background: linear-gradient(#83a530, #d7e5cf);
+    background: linear-gradient(var(--color3), var(--color4));
     width: 60rem;
     height: 60rem;
     margin: -5rem -20rem 0 -20rem;
@@ -60,8 +68,57 @@ h1 span {
     margin-top:0.5em;
 }
 
-.skill-heading {}
-.skill-list {}
-.skill-item {}
-.skill-name {}
-.skill-progress {}
+.skill-heading {
+    text-transform: uppercase;
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: normal;
+    margin: 1em 0 0.4em 0;
+}
+.skill-list {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.skill-item {
+    flex: 50%;
+    list-style: none;
+}
+.skill-name {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #000;
+}
+.skill-progress {
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+    appearance: none;
+    width: 80%;
+    display: block;
+    height: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.skill-progress::-webkit-progress-bar {
+    /* background-color: :#30a5a5; */
+    background: var(--progress-color2);
+    border-radius: 2px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset; */
+}
+
+.skill-progress::-webkit-progress-value {
+    /* background-image:
+         -webkit-linear-gradient(-45deg, 
+                                 transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                                 rgba(0,0, 0, .1) 66%, transparent 66%),
+         -webkit-linear-gradient(top, 
+                                 rgba(255, 255, 255, .25), 
+                                 rgba(0, 0, 0, .25)),
+         -webkit-linear-gradient(left, #09c, #f44);
+   */
+      /* border-radius: 2px;  */
+      /* background-size: 35px 20px, 100% 100%, 100% 100%; */
+    background: var(--progress-color1);
+}
