@@ -1,10 +1,19 @@
 :root {
-    --color1: #30a5a5;
+    /* --color1: #30a5a5;
     --color2: #a1ca81;
     --color3: #83a530;
-    --color4: #d7e5cf;
+    --color4: #d7e5cf; */
     --progress-color1: #fff;
     --progress-color2: #000;
+
+    --color3: rgba(246, 81, 29, 1);
+    --color4: rgba(255, 180, 0, 1);
+    --color1: rgba(0, 166, 237, 1);
+    --color2: rgba(127, 184, 0, 1);
+    /* $color5: rgba(13, 44, 84, 1); */
+    --progress-color1: rgba(0, 166, 237, 1);
+    --progress-color2: rgba(13, 44, 84, 1);;
+
 }
 html {
     height:100%;
@@ -70,10 +79,11 @@ h1 span {
 
 .skill-heading {
     text-transform: uppercase;
-    color: #000;
-    font-size: 0.9rem;
+    color: #fff;
+    font-size: 0.8rem;
     font-weight: normal;
-    margin: 1em 0 0.4em 0;
+    margin: 1em 0 0.2em 0;
+    font-weight: bold;
 }
 .skill-list {
     padding: 0;
@@ -89,7 +99,7 @@ h1 span {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 0.8rem;
-    color: #000;
+    color: #fff;
 }
 .skill-progress {
     /* Reset the default appearance */
@@ -97,8 +107,8 @@ h1 span {
     appearance: none;
     width: 80%;
     display: block;
-    height: 0.5rem;
-    margin-bottom: 1rem;
+    height: 0.3rem;
+    margin-bottom: 0.1rem;
 }
 
 .skill-progress::-webkit-progress-bar {
