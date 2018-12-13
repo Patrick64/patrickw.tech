@@ -3,50 +3,63 @@
     --color2: #a1ca81;
     --color3: #83a530;
     --color4: #d7e5cf; */
-    --progress-color1: #fff;
-    --progress-color2: #000;
+    --progress-color1: #7FB800;
+    --progress-color2: rgba(13, 44, 84, 1);
 
     --color3: rgba(246, 81, 29, 1);
     --color4: rgba(255, 180, 0, 1);
     --color1: rgba(0, 166, 237, 1);
-    --color2: rgba(127, 184, 0, 1);
+    --color2: #000; 
+    /* rgba(127, 184, 0, 1); */
     /* $color5: rgba(13, 44, 84, 1); */
-    --progress-color1: rgba(0, 166, 237, 1);
-    --progress-color2: rgba(13, 44, 84, 1);;
+    /* --progress-color2: rgba(0, 166, 237, 1);
+    --progress-color1: rgba(13, 44, 84, 1);; */
 
 }
 html {
     height:100%;
 }
+p {
+    line-height: calc(1rem + 0.5em);
+}
 body {
-    
-    /* height:100%; */
+    min-height: 100%;
     margin:0;
+    display: flex;
+    flex-direction: column;
 }
 .site-wrap {
-    background:    linear-gradient(var(--color1), var(--color2) );
+    background: linear-gradient(#00a6ed, var(--color2) );
     overflow: hidden;
+    min-height: 100%;
+    flex: 1;
 }
 .profile-box {
     margin:4rem auto;
     font-family: sans-serif;
-    max-width:20rem;
+    max-width: 21rem;
     /* border: 1px solid #000; */
     box-shadow: 14px 14px 24px -1px rgba(3,3,3,0.19);
-    padding:2rem;
+    padding: 1.5rem;
     background: #fff url(../images/technology-1283624_1280.jpg) no-repeat center top;
     background-size: contain;
     overflow: hidden;
     position: relative;
 }
+.subheading {
+    font-size: 1rem;
+    margin: 1em 0 0.5em 0;
+    /* text-transform: uppercase; */
+}
 .profile-text-bg {
-    background: linear-gradient(var(--color3), var(--color4));
+    /* background: linear-gradient(var(--color3), var(--color4)); */
     width: 60rem;
     height: 60rem;
     margin: -5rem -20rem 0 -20rem;
     border-radius: 100rem;
     position: absolute;
     z-index: 1;
+    background: #fff;
 }
 .profile-text {
     position: relative;
@@ -69,7 +82,7 @@ h1 {
     font-size: 1.6rem;
     font-family: sans-serif;
     text-align: center;
-    color: #fff;
+    /* color: #fff; */
 }
 h1 span {
     display: block;
@@ -79,7 +92,7 @@ h1 span {
 
 .skill-heading {
     text-transform: uppercase;
-    color: #fff;
+    /* color: #fff; */
     font-size: 0.8rem;
     font-weight: normal;
     margin: 1em 0 0.2em 0;
@@ -89,32 +102,38 @@ h1 span {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
+    margin: 0 -1rem;
 }
 .skill-item {
     flex: 50%;
     list-style: none;
+    margin: 0.2rem 0%;
+    padding: 0 1rem;
+    /* width: 50%; */
+    box-sizing: border-box;
 }
 .skill-name {
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    color: #fff;
+    /* text-transform: uppercase; */
+    font-size: 0.9rem;
+    color: #000;
+    margin-bottom: 0.1rem;
+    display: block;
 }
 .skill-progress {
     /* Reset the default appearance */
     -webkit-appearance: none;
     appearance: none;
-    width: 80%;
+    width: 100%;
     display: block;
-    height: 0.3rem;
-    margin-bottom: 0.1rem;
+    height: 5px;
+    /* margin-bottom: 0.1rem; */
 }
 
 .skill-progress::-webkit-progress-bar {
     /* background-color: :#30a5a5; */
     background: var(--progress-color2);
-    border-radius: 2px;
+    /* border-radius: 2px; */
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset; */
 }
 
@@ -131,4 +150,8 @@ h1 span {
       /* border-radius: 2px;  */
       /* background-size: 35px 20px, 100% 100%, 100% 100%; */
     background: var(--progress-color1);
+}
+
+.profile-text > p:last-child {
+    margin:0;
 }
