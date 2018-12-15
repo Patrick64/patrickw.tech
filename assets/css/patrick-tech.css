@@ -189,3 +189,15 @@ h1 span {
     z-index: 2;
     padding: 1rem 0;
 }
+@media (max-width: 500px) {
+    .profile-box {
+    max-width: none;
+    margin: 0;
+}
+    .profile-text {
+    }
+    .profile-text-bg {}
+    .site-wrap {
+    background: #fff;
+}
+}
